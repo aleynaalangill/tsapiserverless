@@ -1,0 +1,24 @@
+org: aleynaalangil
+app: tsapiserverless
+service: tsapiserverless
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  app:
+    handler: src/app.handler
+    events:
+      - http: ANY /
+plugins:
+  - serverless-plugin-typescript
+package:
+  exclude:
+    - node_modules/**
+    - hollowdb/**
+    - serverless/**
+    - cache/**
+  excludeDevDependencies: true
+  individually: true

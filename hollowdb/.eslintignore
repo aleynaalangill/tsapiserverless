@@ -1,0 +1,19 @@
+# js output
+build
+dist
+lib
+
+# modules
+node_modules
+
+# contract bundlers in JS
+build.cjs
+
+# ignore configs
+config
+
+# declarations
+*.d.ts
+
+# ignore js
+examples

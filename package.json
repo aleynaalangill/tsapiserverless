@@ -1,0 +1,32 @@
+{
+  "name": "tsapiserverless",
+  "version": "1.0.0",
+  "description": "<!-- title: 'Serverless Framework Node Express API on AWS' description: 'This template demonstrates how to develop and deploy a simple Node Express API running on AWS Lambda using the traditional Serverless Framework.' layout: Doc framework: v3 platform: AWS language: nodeJS priority: 1 authorLink: 'https://github.com/serverless' authorName: 'Serverless, inc.' authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4' -->",
+  "devDependencies": {
+    "@types/compression": "^1.7.2",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "nodemon": "^3.0.1",
+    "serverless-plugin-typescript": "^2.1.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@ethersproject/sha2": "^5.7.0",
+    "express": "^4.18.2",
+    "hollowdb": "^1.2.4",
+    "nodemon": "^3.0.1",
+    "poseidon-lite": "^0.2.0",
+    "serverless-http": "^3.1.1",
+    "snarkjs": "^0.7.0",
+    "warp-contracts": "^1.4.14"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
